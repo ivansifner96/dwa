@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MovieWebApp</title>
+<link rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<style>
+#bodyID {
+background-color : #1A1919;
+width : 1200px;
+height : 1600px;
+}
+
+#div1 {
+    margin-top : 100px;
+    height : 1000px;
+    max-width: 100%;
+    background-color : grey;
+    margin-right : 50px;
+    margin-left : 50px;
+}
+
+
+#div2 p {
+  color: #564385;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+
+#myImage {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    
+}
+
+.bottom-left {
+    position: relative;
+    bottom: 100px;
+    font-style : normal;
+    font-size: 27px;
+    text-align : center;
+    color: #FCFCFC;
+    
+}
+
+.top-right {
+    position: relative;
+    right: 50px;
+    text-align : right;
+    font-style : normal;
+    font-size : 27px;
+    color: #FCFCFC;
+    bottom:1000px;
+    
+}
+
+.top-right a{
+    color : #FCFCFC;
+    
+}
+
+a.dodatak {
+    color : #FCFCFC;
+}
+
+a.dodatak:hover {
+    color: red;
+}
+
+div.newdiv img
+{
+   margin-left:5px;
+   margin-right:5px;
+   width: 250x;
+   height: 250px;
+   border-color : #707070;
+}
+
+
+#rectangle {
+    display: table-cell;
+    background-color: #19191D;
+}
+
+
+
+
+#divcina{
+    display : table;
+    width: 100%;
+    height : 167px;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+
+
+
+
+.form {
+    position : absolute;
+    background : #808080;
+    border: #707070;
+    max-width : 400px;
+    margin : 0 auto 100px;
+    text-align : left;
+    padding : 2px;
+    top : 600px;
+    display : none;
+    left : 470px;
+}
+
+.form p {
+    font-size : 23px;
+    font-family: "Sitka", banner;
+    color : #FCFCFC;
+    font-style : normal;
+    
+}
+
+.form input {
+    outline: 1;
+    font-family: "Sitka", banner;
+    outline : 1;
+    color :#c8e2e5;
+    border : 1;
+    height : 25px;
+    border-radius : 5px;
+    width : 50%;
+    position : relative;
+}
+
+.cir {
+    background-color : #F3A011;
+    width : 27px;
+    height : 27px;
+    border-radius : 50px;
+    text-align : center;
+    float : right;
+    position : relative;
+    font-size : 23px;
+    
+}
+.form button {
+    outline : 0;
+    background : #0BC20B;
+    width : 25%;
+    border : 0;
+    color : #FFFFFF;
+    height : 30px;
+    cursor : pointer;
+    border-radius : 5px;
+}
+</style>
+
+</head>
+<body id="bodyID">
+<div class="container" id=div1><img src="static/styles/images/images.jpg" id="myImage">
+<div class="bottom-left">Dobrodošli na MovieWebApp</div>
+<div class="top-right"><img src="static/styles/images/login.png" style="width:27px;height:34px;"><a onclick="location.href='/home'">SIGN IN</a>
+<img src="static/styles/images/create_account.png" style="width:27px;height:34px;"><a onclick="location.href='/registracija'">CREATE ACCOUNT</a>
+</div>
+
+<div class="content-wrapper" id=div2>
+<p>Zapocnite koristiti MovieWebApp, besplatno je!
+<button type="button" class="btn btn-success btn-md" onclick="location.href='/registracija'">Započni</button>
+Vec ste registrirani? <a onclick="location.href='/home'" class="dodatak">Prijavite se</a>
+</p>
+</div>
+<br><br><br>
+<div class="newdiv">
+<img src="static/styles/images/troy.jpg">
+<img src="static/styles/images/green_street_hooligans.jpg">
+<img src="static/styles/images/planet_of_the_apes.jpg">
+<img src="static/styles/images/american_pie.jpg">
+<img src="static/styles/images/avengers.jpg">
+<img src="static/styles/images/taken3.jpg">
+<br><br>
+</div>
+<div id="divcina">
+<div id="rectangle">
+<img src="static/styles/images/eye.png"style="width:30px; height:30px">
+<p style="color:#564385" "font-size:23px">
+MovieWebApp vam omogucuje da<br>gledate atraktivne filmove kako bi<br>
+uvijek bili u toku sa najnovijim filmskim<br>
+sadržajima.
+</p>
+</div>
+<div id="rectangle">
+<img src="static/styles/images/prices.png" style="width:30px; height:30px">
+<p style="color:#564385" "font-size:23px">
+U buducnosti ce postojati
+opcija narucivanja titlova koja
+ce omoguciti prevod bilo kojeg filma
+na odredjeni jezik.
+</p>
+</div>
+<div id="rectangle">
+<img src="static/styles/images/brain.png" style="width:30px; height:30px">
+<p style="color:#564385" "font-size:23px">
+Filmovi se mogu dodati u listu
+kako bi korisnik uvijek znao
+što je pogledao i u koje
+vrijeme, te se mogu sortirati po
+dekadi i brisati iz liste pregleda.
+</p>
+
+</div>
+</div>
+</div>
+
+ </body>
+ </html>

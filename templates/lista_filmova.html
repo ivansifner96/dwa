@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MovieWebApp</title>
+<link rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<style>
+#tijelo{
+    background-color : #1A1919;
+    background-image : url("static/styles/images/list_background.jpg");
+    background-position : center-center;
+    background-size : cover;
+}
+
+#navigacija p{
+    font-size:30px;
+    color : white;
+}
+
+#navigacija {
+    height: 50px;
+    background-color : #27273B;
+    
+}
+.button1 {
+    background-color : #8F363C;
+    border-radius: 12px;
+    border: none;
+    font-size : 16px;
+    padding : 5px;
+    bottom : 300px;
+}
+
+#menu{
+    margin-left: 20px;
+}
+
+div.inline {float: left;
+
+}
+div.inline1 {
+    float: left;
+}
+
+.inline select{
+    background-color: #27342F;
+    color: #efdcdc;
+    border : none;
+    padding: 8px;
+    font-size: 13px;
+    
+    outline : none;
+    
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.note {
+    font-size: .8em;
+}
+
+#myTable th, td{
+	color: white;
+	border: 2px solid white;
+	border-collapse: collapse;
+}
+
+#myTable{
+	margin-left : 10px;
+}
+</style>
+</head>
+<body id="tijelo">
+<nav class="navbar navbar-inverse" id="navigacija">
+    <ul class="nav navbar-nav navbar-left" style="margin-top:5px;">
+	<p style="display: inline-block;">FilmApp</p>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><p>Lista mojih filmova</p></a></li>
+            <li><a onclick="location.href='lista_filmova'"><p>Ostali filmovi</p></a></li>
+        <li style="bottom:10px; right:0px;"><a onclick="location.href='/'"><button class="button1"><p style="display: inline-block;">Logout</p></button></a></li>
+    </ul>
+  
+</nav>
+
+<div class="inline" style="width:60%;">
+<div class="container-fluid" style=" width:100%;height:120px;">
+<p style="color:white;">Filmovi koje ste pogledali</p>
+<hr style="border-top: dotted 1px; color:white;"/>
+<form method="POST", name="vform">
+<p id="menu" style="display:inline; color:white;">Dekada
+<select onchange="change_value()" name="dekada" id="selektiranje">
+        <option value="">...</option>
+        <option value="1950">1950</option>
+        <option value="1960">1960</option>
+        <option value="1970">1970</option>
+        <option value="1980">1980</option>
+        <option value="1990">1990</option>
+        <option value="2000">2000</option>
+        <option value="2010">2010</option>
+    </select></p>
+<input type="Submit" value="potvrdi za unos"></input>
+<input type = "text" name="godina" id="nev_input" style="display:none"></input>
+</form>
+<hr style="border-top: dotted 1px; color:white;"/> 
+</div>
+<form method="POST" name="vform1">
+<table id="myTable" style="width:100%">
+	<thead>
+	<tr>
+		<th>Naziv</th>
+		<th>Godina</th>
+		<th>Datum pregleda</th>
+	</tr>
+	</thead>
+	<tbody>
+		{% for row in value %} 
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+				<td>{{row[2]}}</td>
+				<td><button value={{row[3]}} name="button1" style="background-color:green; width:100%;" >Obrisi</button></td>
+            </tr>
+        {% endfor %}
+	</tbody>
+</table>
+</form>
+</div>
+
+<div class="inline1" style="display:inline-block; width:20%; margin-left:140px; margin-top:15%;">
+<p style="color:white;">Napomena!</p>
+<hr style="border-top: dotted 1px; color:white;"/>
+<p style="color:white;">Filmovi se dodaju u listu pregleda kod
+popisa filmova i prati se vrijeme kada su dodani u listu.
+.</p>
+<hr style="border-top: dotted 1px; color:white;"/>
+</div>
+<script>
+function change_value() {
+const item = document.getElementById('selektiranje').value;
+document.getElementById('nev_input').value = item;
+
+}
+</script>
+
+</body>
+</html>

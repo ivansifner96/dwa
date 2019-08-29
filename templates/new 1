@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="dizajnfilmova.css" />
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<style>
+#tijelo{
+    background-color : #1A1919;
+    background-image : linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("static/styles/images/avengers.jpg");
+    background-position : center;
+    background-size : cover;
+}
+
+.movies {
+}
+
+.movies img {
+    width:90%;
+    margin-top : 15px;
+    cursor: pointer;
+    box-shadow : -4px 4px 5px 0 #000;
+    transition : 1s;
+}
+
+.movies img:hover {
+    transform : translateY(-10px);
+}
+
+#navigacija p{
+    font-size:30px;
+    color : white;
+}
+
+#navigacija {
+    height: 60px;
+    background-color : #27273B;
+	width:1165px;
+    
+}
+
+
+
+.button1 {
+    background-color : #8F363C;
+    border-radius: 12px;
+    border: none;
+    font-size : 16px;
+    padding : 5px;
+    bottom : 300px;
+}
+
+#pretrazivanje {
+    position : relative;
+    float : left;
+    left : 900px;
+    width: 25%;
+    height: 40px;
+    color:white;
+}
+
+#unutrasnji {
+    float : right;
+    
+}
+
+#moja_forma {
+    background-color : #808080;
+}
+
+#moja_forma input{
+    height : 30px;;
+}
+.cir {
+    background-color : #F3A011;
+    width : 27px;
+    height : 27px;
+    border-radius : 50px;
+    text-align : center;
+    float : right;
+    position : relative;
+    font-size : 23px;
+    
+}
+
+</style>
+  </head>
+  <body id="tijelo">
+    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigacija">
+  
+    <ul class="nav navbar-nav navbar-left">
+      <img src="static/styles/images/balans.png" style="height:40px; width:30px; margin-top:0px;"><p style="display: inline-block;">Balans:$$$$</p>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a><p style="display: inline-block; margin-top:20px;">Username</p></a></li>
+        <li class="dropdown" style="margin-top:20px;"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><p style="display: inline-block;">Filmovi</p></a>
+        <ul class="dropdown-menu" style="background-color:#27273B;">
+            <li><a onclick="location.href='/moji_filmovi'"><p>Lista mojih filmova</p></a></li>
+            <li><a href="#"><p>Ostali filmovi</p></a></li>
+         </ul>
+        </li>
+        <li><a href="narucivanje.html"><p style="display: inline-block; margin-top:20px;">Naruči titlove</p></a></li>
+        <li><a href="#"><p style="display: inline-block; margin-top:20px;">Kviz</p></a></li>
+        <li style="bottom:10px; right:0px; margin-top:20px;"><a onclick="location.href='/'"><button class="button1"><p style="display: inline-block;">Logout</p></button></a></li>
+    </ul>
+</nav>
+</div>
+    <main class="container mt-2">
+      <form>
+        <fieldset class="form-group">
+          <label for="searchTerm">Search</label>
+          <input type="text" class="form-control" id="searchTerm" placeholder="Enter a movie title." style="width:25%;">
+        </fieldset>
+        <button type="submit" class="btn btn-primary">GO</button>
+      </form>
+<div class="container movies" id="zajebancijaaa">
+<h3 style="color:white; text-align:left;">Filmovi</h3>
+<hr>
+<div class="row">
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/movies/cabinfever.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Cabin fever</h5>
+      <p class="card-text">2002.</p>
+	  <a href="https://123putlocker.info/cabin-fever/">Pogledaj film</a>
+    </div>
+  </div>
+
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/movies/dontbreathe.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Don't breathe</h5>
+      <p class="card-text">2016.</p>
+	  <a href="https://123putlocker.info/dont-breathe/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/horori/paranormal_activity.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Paranormal activity</h5>
+      <p class="card-text">2007</p>
+	  <a href="https://123putlocker.info/paranormal-activity-2007/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/movies/fridaythe13th.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Friday the 13th</h5>
+      <p class="card-text">2009.</p>
+	  <a href="https://123putlocker.info/friday-the-13th-2009/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/movies/oculus.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Oculus</h5>
+      <p class="card-text">2014.</p>
+	  <a href="https://123putlocker.info/oculus/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/movies/onemissedcall.jpg">
+    <div class="card-body">
+      <h5 class="card-title">One missed call</h5>
+      <p class="card-text">2008.</p>
+	  <a href="https://123putlocker.info/one-missed-call/";>Pogledaj film</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/horori/blood_fest.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Blood fest</h5>
+      <p class="card-text">2018.</p>
+	  <a href="https://123putlocker.info/blood-fest/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/horori/dracula.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Dracula</h5>
+      <p class="card-text">1992.</p>
+	   <a href="https://123putlocker.info/dracula-1992/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/horori/insomnia.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Insomnia</h5>
+      <p class="card-text">2002.</p>
+	  <a href="https://123putlocker.info/insomnia-2002/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/horori/the_apparition.jpg">
+    <div class="card-body">
+      <h5 class="card-title">The apparition</h5>
+      <p class="card-text">2012.</p>
+	  <a href="https://123putlocker.info/the-apparition/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/horori/the_last_house_on_the_left.jpg">
+    <div class="card-body">
+      <h5 class="card-title">The last house on the left</h5>
+      <p class="card-text">2009.</p>
+	  <a href="https://123putlocker.info/the-last-house-on-the-left/";>Pogledaj film</a>
+    </div>
+  </div>
+<div class="card col-4">
+    <img class="card-img-top" src="static/styles/images/planet_of_the_apes.jpg">
+    <div class="card-body">
+      <h5 class="card-title">Planet of the apes</h5>
+      <p class="card-text">2001.</p>
+	  <a href="https://123putlocker.info/planet-of-the-apes-2001/";>Pogledaj film</a>
+    </div>
+  </div>
+</div>
+<hr>
+</div>
+<section class="mt-2 row" id="results">
+
+ </section>
+ </main>
+ <div  id="kurcina" style="width:25%; margin-left:130px; height:200px;">
+
+</div>
+<script>
+const form = document.querySelector('form');
+const input = document.querySelector('#searchTerm');
+const resultsSection = document.querySelector('#results');
+var ejsn = document.querySelector('#zajebancijaaa');
+
+
+const prikazi = ejsn.innerHTML;
+const API_URL = 'https://omdb-api.now.sh/?type=movie&s=';
+const SITE_URL = 'https://123putlocker.info/';
+
+form.addEventListener('submit', formSubmitted);
+
+function formSubmitted(event) {
+    event.preventDefault();
+    const searchTerm = input.value;
+	if(searchTerm == ''){
+		ejsn.innerHTML = prikazi;
+		resultsSection.innerHTML='';
+	}
+    else getResults(searchTerm);
+}
+
+function closeForm() {
+  document.getElementById("moja_forma").style.display = "none";
+  ejsn.innerHTML = prikazi;
+}
+
+function getResults(searchTerm) {
+    const url = `${API_URL}${searchTerm}`;
+    fetch(url)                                     
+        .then(response => response.json())
+        .then(data => showResults(data.Search));
+}
+
+function showResults(results) {
+	var prikazi = ejsn.innerHTML;
+    resultsSection.innerHTML='';
+    let html='';
+    results.forEach(movie => {
+		var symbol = '-';
+		var json_string = `${SITE_URL}${movie.Title}${symbol}${movie.Year}`;
+		json_string = json_string.replace(/\s/g,'-');
+		json_string = json_string.replace(/:-|""/g,'-');
+		console.log(json_string);
+        html += `<div class="card col-4">
+    <img class="card-img-top" src="${movie.Poster}" alt="${movie.Title}">
+    <div class="card-body">
+      <h5 class="card-title">${movie.Title}</h5>
+      <p class="card-text">${movie.Year}</p>
+	  <a href="${json_string}">Pogledaj film</a>
+	  <button data-id="${movie.imdbID}" type="button"; class="btn btn-danger watch-later-button">Dodaj u listu filmova</button>
+    </div>
+  </div>
+  `;
+	ejsn.innerHTML='';
+        });
+	resultsSection.innerHTML=html;
+	const watchLaterButtons = document.querySelectorAll('.watch-later-button');
+	watchLaterButtons.forEach(button => {
+		const { id } = button.dataset;
+		button.addEventListener('click', (event) => {
+			const movie = results.find(movie => movie.imdbID === id) 
+			console.log(movie.Year);
+			var filmnaziv = `${movie.Title}`;
+			var godina = `${movie.Year}`;
+			console.log(filmnaziv);
+			resultsSection.innerHTML='';
+			const lazni_form = document.querySelector('#kurcina');
+			var forma =  `<form method="POST" name="vform" id="moja_forma" style="width:100%; height=100%;">
+				<div class="cir">
+				<a href="#" style="text-decoration:none" onclick="closeForm(resultsSection)">X</a>
+				</div>
+				<br>
+				<label for="item">Naz_filma: </label>
+				<input type="text", id="myInput", name="naziv" style="width:100%;">
+				<br>
+				<label for="item">God_filma: </label>
+				<input type="text", id="myInput1", name="godina" style="width:100%;">
+				<br><br>
+				<input type="Submit" value="Potvrdi za unos"></input>
+				</form>`;
+				lazni_form.innerHTML=forma;
+				document.getElementById("myInput").value = filmnaziv;
+				document.getElementById("myInput1").value = godina;
+		});
+	});
+}
+
+</script>
+  </body>
+</html>

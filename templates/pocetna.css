@@ -1,0 +1,152 @@
+#bodyID {
+background-color : #1A1919;
+width : 1200px;
+height : 1600px;
+}
+
+#div1 {
+    margin-top : 100px;
+    height : 1000px;
+    max-width: 100%;
+    background-color : grey;
+    margin-right : 50px;
+    margin-left : 50px;
+}
+
+
+#div2 p {
+  color: #564385;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+
+#myImage {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    
+}
+
+.bottom-left {
+    position: relative;
+    bottom: 100px;
+    font-style : normal;
+    font-size: 27px;
+    text-align : center;
+    color: #FCFCFC;
+    
+}
+
+.top-right {
+    position: relative;
+    right: 50px;
+    text-align : right;
+    font-style : normal;
+    font-size : 27px;
+    color: #FCFCFC;
+    bottom:1000px;
+    
+}
+
+.top-right a{
+    color : #FCFCFC;
+    
+}
+
+a.dodatak {
+    color : #FCFCFC;
+}
+
+a.dodatak:hover {
+    color: red;
+}
+
+div.newdiv img
+{
+   margin-left:5px;
+   margin-right:5px;
+   width: 250x;
+   height: 250px;
+   border-color : #707070;
+}
+
+
+#rectangle {
+    display: table-cell;
+    background-color: #19191D;
+}
+
+
+
+
+#divcina{
+    display : table;
+    width: 100%;
+    height : 167px;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+
+
+
+
+.form {
+    position : absolute;
+    background : #808080;
+    border: #707070;
+    max-width : 400px;
+    margin : 0 auto 100px;
+    text-align : left;
+    padding : 2px;
+    top : 600px;
+    display : none;
+    left : 470px;
+}
+
+.form p {
+    font-size : 23px;
+    font-family: "Sitka", banner;
+    color : #FCFCFC;
+    font-style : normal;
+    
+}
+
+.form input {
+    outline: 1;
+    font-family: "Sitka", banner;
+    outline : 1;
+    color :#c8e2e5;
+    border : 1;
+    height : 25px;
+    border-radius : 5px;
+    width : 50%;
+    position : relative;
+}
+
+.cir {
+    background-color : #F3A011;
+    width : 27px;
+    height : 27px;
+    border-radius : 50px;
+    text-align : center;
+    float : right;
+    position : relative;
+    font-size : 23px;
+    
+}
+.form button {
+    outline : 0;
+    background : #0BC20B;
+    width : 25%;
+    border : 0;
+    color : #FFFFFF;
+    height : 30px;
+    cursor : pointer;
+    border-radius : 5px;
+}
+

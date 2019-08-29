@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MovieWebApp</title>
+<link rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+<style>
+
+#bodyID {
+ background-image: url("static/styles/images/pozadina_registracija.jpg");
+ background-color: #cccccc;
+}
+
+.form {
+	margin_top : 15px;
+	height : 530 px;
+	width : 600px;
+    position : absolute;
+    background : #808080;
+    border: #707070;
+    margin : 0 auto 100px;
+    text-align : left;
+    padding : 2px;
+    top : 60px;
+    left : 400px;
+}
+
+.form p {
+    font-size : 23px;
+    font-family: "Sitka", banner;
+    color : #FCFCFC;
+    font-style : normal;
+    
+}
+
+.form input {
+    outline: 1;
+    font-family: "Sitka", banner;
+    outline : 1;
+    color :black;
+    border : 1;
+    height : 25px;
+    border-radius : 5px;
+    width : 50%;
+    position : relative;
+}
+
+
+.form button {
+    outline : 0;
+    background : #0BC20B;
+    width : 25%;
+    border : 0;
+    color : #FFFFFF;
+    height : 35px;
+    cursor : pointer;
+    border-radius : 5px;
+}
+</style>
+</head>
+<body id="bodyID">
+<div class="form" id="myForm">
+        <form class="register-form" method="POST" name="vform">
+            <h2 style="color:#3E3A3A">MovieWebApp Sign Up</h1>
+            <p>Ime</p>
+            <input type="text" placeholder="First Name"/ style="width:100%" name="ime" required>
+			<p>Prezime</p>
+            <input type="text" placeholder="Last Name"/ style="width:100%" name="prezime" required>
+			<p>Korisničko ime</p>
+            <input type="text" placeholder="Username"/ style="width:100%" name="username" required>
+			<p>Email adresa</p>
+            <input type="text" placeholder="Email"/ style="width:100%" name="email" required>
+            <p>Šifra</p>
+            <input type="text" placeholder="Password"/ name="password" required>
+            <p>Potvrdite šifru</p>
+            <input type="text" placeholder="Confirm the password"/ name="con_pass" required>
+            <br><br>
+            <button>Registriraj se</button>
+			<button style="background-color:blue"; onclick="location.href='/'">Cancel</button>  
+        </form>
+    </div>
+</body>
+</html>
